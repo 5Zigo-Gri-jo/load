@@ -6,10 +6,10 @@ authors = [
     {name = "rlaehgus97", email = "starkim625@gmail.com"},
 ]
 dependencies = []
-requires-python = "==3.11.*"
+requires-python = ">=3.9" #"==3.11.*"
 readme = "README.md"
 license = {text = "MIT"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
