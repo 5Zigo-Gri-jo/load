@@ -1,34 +1,15 @@
-# 플레이 데이터 DE 32기 첫번째 프로젝트
 
-## ETL project with movie data
+# Load Package
 
-### Load function
+이 레포지토리는 5Zigo Gri jo의 Load의 역할을 담당하고 있습니다.
 
-How to Install
+## 설치방법
+이 레포지토리의 설치 방법은 아래와 같습니다.
 ```
 # main
 $ pip install git+https://github.com/5Zigo-Gri-jo/load.git
-
-# branch
-$ pip install git+https://github.com/5Zigo-Gri-jo/load.git@<BRANCH_NAME>
 ```
+※ 다만 본 레포지토리는 https://github.com/5Zigo-Gri-jo/airflow_dags.git 레포지토리의 하위 패키지입니다.
 
-Start development with commands below!
-```
-$ git clone <URL>              # download files posted in github
-$ cd <DIR>                     # make directory for package
-$ source .venv/bin/activate    # activate virtual env
-$ pdm install                  # ??
-$ pytest                       # don't forget to test your code
-
-# option
-$ pdm venv create              # ??
-```
-
-Confirm whether env settled
-```
-$ cat ~/.zshrc | tail -n 3
-
-# MY_ENV
-export MOVIE_API_KEY="<KEY>"
-```
+## 동작내용
+Transform_Package를 통해 데이터 프레임 형태로 저장한 데이터를 최종적으로 Load_Package를 이용해 parquet 파일형태로 저장하는 모듈입니다. 
