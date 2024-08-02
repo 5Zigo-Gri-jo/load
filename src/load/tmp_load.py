@@ -1,4 +1,4 @@
-from load.src.load import ice_breaking
+from src.load.load import ice_breaking
 
 def cmd():
     ice_breaking()
